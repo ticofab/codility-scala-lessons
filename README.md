@@ -5,12 +5,12 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 
 **Iterations:**
 
-* BinaryGap
+* [BinaryGap](https://github.com/ticofab/codility-scala-lessons/blob/master/src/iterations/BinaryGap.sc)
 
 **Arrays:**
 
-* CyclicRotation
-* OddOccurrencesInArray
+* [CyclicRotation](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/CyclicRotation.sc)
+* [OddOccurrencesInArray](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/OddOccurrencesInArray.sc)
 
 License
 --------
