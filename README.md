@@ -3,11 +3,11 @@ Codility lessons in Scala
 
 Lessons from [Codility](https://codility.com) implemented in Scala.
 
-Lesson 1 (iterations):
+**Iterations:**
 
 * BinaryGap
 
-Lesson 2 (arrays):
+**Arrays:**
 
 * CyclicRotation
 * OddOccurrencesInArray
