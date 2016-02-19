@@ -1,5 +1,36 @@
 object FrogRiverOne {
-  
+
+  // 100%
+  def solution(X: Int, A: Array[Int]): Int = {
+    val pos: Array[Int] = Array.ofDim(X + 1)
+
+    def areAllLeavesInPlace = {
+      def rec(i: Int): Boolean = {
+        if (i == X + 1) true
+        else if (pos(i) == 0) false
+        else rec(i + 1)
+      }
+      rec(1)
+    }
+
+    def findTime(step: Int, L: List[Int]): Int = {
+      if (L.isEmpty) -1
+      else {
+        pos(L.head) = pos(L.head) + 1
+        if (areAllLeavesInPlace) step
+        else findTime(step + 1, L.tail)
+      }
+    }
+
+    findTime(0, A.toList)
+  }
+
+  val ar1 = Array(1, 3, 1, 4, 2, 3, 5, 4)
+  val ar2 = Array(4,3,2,1,5,4,3,2,1,6)
+  solution(5, ar1)
+  solution(6, ar2)
+
+
   /*
 
   A small frog wants to get to the other side of a river. The frog is currently located at position 0, and wants to get to position X. Leaves fall from a tree onto the surface of the river.

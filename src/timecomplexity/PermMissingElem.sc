@@ -1,5 +1,19 @@
 object PermMissingElem {
 
+  // 100%
+  def solution(A: Array[Int]): Int = {
+    def findMissing(i: Int, L: List[Int]): Int = {
+      if (L.isEmpty || L.head != i + 1) i + 1
+      else findMissing(i + 1, L.tail)
+    }
+    if (A.length == 0) 1
+    else findMissing(0, A.toList.sorted)
+  }
+
+  solution(Array(2, 3, 1, 5))
+  solution(Array())
+  solution(Array(1))
+  solution(Array(4, 5, 3, 1))
 
   /*
   A zero-indexed array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing.

@@ -1,6 +1,32 @@
 object MaxCounters {
 
+  // 88%
+  def solution(N: Int, A: Array[Int]): Array[Int] = {
+    val counters: Array[Int] = Array.ofDim(N)
 
+    def increaseCounter(x: Int) = counters(x - 1) = counters(x - 1) + 1
+
+    def maxCounters() = {
+      val max = counters.max
+      for (i <- counters.indices) counters(i) = max
+    }
+
+    def getCounters(ops: List[Int]): Array[Int] = {
+      if (ops.isEmpty) counters
+      else {
+        ops.head match {
+          case x: Int if x >= 1 && x <= N => increaseCounter(x)
+          case x: Int if x > N => maxCounters()
+        }
+        getCounters(ops.tail)
+      }
+    }
+
+    getCounters(A.toList)
+  }
+
+  val ops = Array(3, 4, 4, 6, 1, 4, 4)
+  solution(5, ops)
 
   /*
 

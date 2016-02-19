@@ -1,4 +1,18 @@
 object FrogJmp {
+
+  // 100%
+  def solution(X: Int, Y: Int, D: Int): Int = {
+    val distance: Long = Y - X
+    val minimum = distance / D
+    if (distance % D > 0) (minimum + 1).toInt
+    else minimum.toInt
+  }
+
+  solution(10, 85, 30)
+  solution(10, 10, 20)
+  solution(10, 50, 10)
+  solution(0, 50, 10)
+
   /*
   A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D.
 

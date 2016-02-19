@@ -1,6 +1,24 @@
 object PermCheck {
 
-  
+  // 100%
+  def solution(A: Array[Int]): Int = {
+    def isPerm(L: List[Int]): Int = {
+      if (L.tail.isEmpty) 1
+      else if (L.tail.head != L.head + 1) 0
+      else isPerm(L.tail)
+    }
+
+    val list: List[Int] = A.toList.sorted
+    if (list.head != 1) 0
+    else if (list.last != list.size) 0
+    else isPerm(list)
+  }
+
+  solution(Array(4, 1, 3, 2))
+  solution(Array(4, 1, 3))
+  solution(Array(5,3,2,1,4))
+
+
   /*
 
   A non-empty zero-indexed array A consisting of N integers is given.
