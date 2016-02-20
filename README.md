@@ -12,6 +12,19 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 * [CyclicRotation](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/CyclicRotation.sc)
 * [OddOccurrencesInArray](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/OddOccurrencesInArray.sc)
 
+**Time Complexity:**
+
+* [Tape Equilibrium](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/TapeEquilibrium.sc)
+* [FrogJmp](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/FrogJmp.sc)
+* [PermMissingElem](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/PermMissingElem.sc)
+
+**Counting Elements:**
+
+* [PermCheck](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/PermCheck.sc)
+* [FrogRiverOne](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/FrogRiverOne.sc)
+* [MissingInteger](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MissingInteger.sc)
+* [MaxCounters](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MaxCounters.sc)
+
 License
 --------
 
