@@ -1,21 +1,21 @@
 object MissingInteger {
 
-  // 33 %
+  // 100%
   def solution(A: Array[Int]): Int = {
-    val list = A.toList
-    val occ: Array[Int] = Array.ofDim(list.max + 1)
-    list.foreach(el => occ(el) = occ(el) + 1)
-    def getMissing(i: Int): Int = {
-      if (occ(i) == 0) i
-      else getMissing(i+1)
+    def findMissing(in: Int, l: List[Int]): Int = {
+      if (l.isEmpty || l.head != in) in
+      else findMissing(in + 1, l.tail)
     }
-    getMissing(1)
+    findMissing(1, A.toList.filter(_ > 0).distinct.sorted)
   }
 
-  solution(Array(1, 2, 4))
-  solution(Array(3, 6, 4, 1 ,2))
-  solution(Array(3, 3, 2, 4, 2, 3, 1, 8, 8))
-
+  solution(Array(1,3,6,4,1,2))
+  solution(Array(1))
+  solution(Array(3))
+  solution(Array(0))
+  solution(Array(-2))
+  solution(Array(-5, 0, -2, 1))
+  solution(Array(-2147483648, 2147483647))
 
   /*
 
