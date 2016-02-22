@@ -5,25 +5,25 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 
 **Iterations:**
 
-* [BinaryGap](https://github.com/ticofab/codility-scala-lessons/blob/master/src/iterations/BinaryGap.sc)
+* [BinaryGap](https://github.com/ticofab/codility-scala-lessons/blob/master/src/iterations/BinaryGap.sc) (100%)
 
 **Arrays:**
 
-* [CyclicRotation](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/CyclicRotation.sc)
-* [OddOccurrencesInArray](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/OddOccurrencesInArray.sc)
+* [CyclicRotation](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/CyclicRotation.sc) (100%)
+* [OddOccurrencesInArray](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/OddOccurrencesInArray.sc) (66%)
 
 **Time Complexity:**
 
-* [Tape Equilibrium](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/TapeEquilibrium.sc)
-* [FrogJmp](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/FrogJmp.sc)
-* [PermMissingElem](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/PermMissingElem.sc)
+* [Tape Equilibrium](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/TapeEquilibrium.sc) (66%)
+* [FrogJmp](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/FrogJmp.sc) (100%)
+* [PermMissingElem](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/PermMissingElem.sc) (100%)
 
 **Counting Elements:**
 
-* [PermCheck](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/PermCheck.sc)
-* [FrogRiverOne](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/FrogRiverOne.sc)
-* [MissingInteger](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MissingInteger.sc)
-* [MaxCounters](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MaxCounters.sc)
+* [PermCheck](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/PermCheck.sc) (100%)
+* [FrogRiverOne](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/FrogRiverOne.sc) (100%)
+* [MissingInteger](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MissingInteger.sc) (100%)
+* [MaxCounters](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MaxCounters.sc) (88%)
 
 License
 --------
