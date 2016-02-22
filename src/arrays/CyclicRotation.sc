@@ -1,4 +1,5 @@
 object CyclicRotation {
+  // 100%
   def solution(A: Array[Int], K: Int): Array[Int] = {
     def rotateKStep(l: List[Int], K: Int): List[Int] = {
       def rotateOneStep(l: List[Int]) = {

@@ -1,4 +1,5 @@
 object BinaryGap {
+  // 100%
   def solution(N: Int): Int = {
     val list = "(?<=1)0+(?=1)".r.findAllIn(N.toBinaryString).toList
     if (list.isEmpty) 0

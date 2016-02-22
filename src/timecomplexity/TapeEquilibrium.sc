@@ -20,12 +20,26 @@ object TapeEquilibrium {
     findEq(2, initialDiff)
   }
 
+  // 50%
+  def solution2(A: Array[Int]): Int = {
+    val L = A.toList
+    def getDiff(P: Int): Int = Math.abs(L.take(P).sum - L.takeRight(L.size - P).sum)
+
+    val arr: Array[Int] = Array.ofDim(L.size)
+    for (i <- 1 until L.size - 1) arr(i) = getDiff(i)
+    arr.toList.min
+  }
+
   val ar1 = Array(3, 1, 2, 4, 3)
   val ar2 = Array(1, 1, 1, 1)
   val ar3 = Array(1, 1, 1, 2)
   solution(ar1)
   solution(ar2)
   solution(ar3)
+  solution2(ar1)
+  solution2(ar2)
+  solution2(ar3)
+
 
   /*
   A non-empty zero-indexed array A consisting of N integers is given. Array A represents numbers on a tape.
