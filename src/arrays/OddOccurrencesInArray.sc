@@ -20,12 +20,23 @@ object OddOccurrencesInArray {
     getUnpaired(A.toList)
   }
 
+  // 88%
+  def solution3(A: Array[Int]): Int = {
+    val ar: Array[Int] = Array.ofDim[Int](A.toList.max + 1)
+    for (i <- A.indices) ar(A(i)) = ar(A(i)) + 1
+    for (i <- ar.indices) if (ar(i) % 2 == 1) return i
+    -1
+  }
+
   val ar1: Array[Int] = Array(2, 1, 2, 4, 1)
   val ar2: Array[Int] = Array(1, 2, 2, 2, 2, 2, 2)
   val ar3: Array[Int] = Array(2, 2, 2, 2, 2, 2, 3)
   solution(ar1)
   solution(ar2)
   solution(ar3)
+  solution3(ar1)
+  solution3(ar2)
+  solution3(ar3)
 
   /*
   A non-empty zero-indexed array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.

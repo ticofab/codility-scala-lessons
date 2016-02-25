@@ -10,7 +10,7 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 **Arrays:**
 
 * [CyclicRotation](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/CyclicRotation.sc) (100%)
-* [OddOccurrencesInArray](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/OddOccurrencesInArray.sc) (66%)
+* [OddOccurrencesInArray](https://github.com/ticofab/codility-scala-lessons/blob/master/src/arrays/OddOccurrencesInArray.sc) (88%)
 
 **Time Complexity:**
 
