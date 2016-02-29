@@ -14,7 +14,7 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 
 **Time Complexity:**
 
-* [Tape Equilibrium](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/TapeEquilibrium.sc) (66%)
+* [Tape Equilibrium](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/TapeEquilibrium.sc) (100%)
 * [FrogJmp](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/FrogJmp.sc) (100%)
 * [PermMissingElem](https://github.com/ticofab/codility-scala-lessons/blob/master/src/timecomplexity/PermMissingElem.sc) (100%)
 

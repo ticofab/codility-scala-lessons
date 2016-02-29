@@ -30,15 +30,28 @@ object TapeEquilibrium {
     arr.toList.min
   }
 
+  // 100
+  def solution3(A: Array[Int]): Int = {
+    val sum = A.sum
+
+    def getDiff(sumLeft: Int, sumRight: Int): Int = Math.abs(sumLeft - sumRight)
+
+    def findEq(P: Int, sumLeft: Int, curMin: Int): Int =
+      if (P == A.length) curMin
+      else findEq(P + 1, sumLeft + A(P - 1), Math.min(curMin, getDiff(sumLeft, sum - sumLeft)))
+
+    findEq(2, A(0), getDiff(A(0), sum - A(0)))
+  }
+
   val ar1 = Array(3, 1, 2, 4, 3)
   val ar2 = Array(1, 1, 1, 1)
   val ar3 = Array(1, 1, 1, 2)
   solution(ar1)
   solution(ar2)
   solution(ar3)
-  solution2(ar1)
-  solution2(ar2)
-  solution2(ar3)
+  solution3(ar1)
+  solution3(ar2)
+  solution3(ar3)
 
 
   /*
