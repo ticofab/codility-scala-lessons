@@ -1,7 +1,30 @@
 object TapeEquilibrium {
 
-  // 66%
+  // 100%
   def solution(A: Array[Int]): Int = {
+    val sum = A.sum
+
+    def getDiff(sumLeft: Int, sumRight: Int): Int = Math.abs(sumLeft - sumRight)
+
+    def findEq(P: Int, sumLeft: Int, curMin: Int): Int =
+      if (P == A.length) curMin
+      else findEq(P + 1, sumLeft + A(P - 1), Math.min(curMin, getDiff(sumLeft, sum - sumLeft)))
+
+    findEq(2, A(0), getDiff(A(0), sum - A(0)))
+  }
+
+  // 50%
+  def solution2(A: Array[Int]): Int = {
+    val L = A.toList
+    def getDiff(P: Int): Int = Math.abs(L.take(P).sum - L.takeRight(L.size - P).sum)
+
+    val arr: Array[Int] = Array.ofDim(L.size)
+    for (i <- 1 until L.size - 1) arr(i) = getDiff(i)
+    arr.toList.min
+  }
+
+  // 66%
+  def solution3(A: Array[Int]): Int = {
     val L = A.toList
 
     def getDiff(P: Int): Int =
@@ -18,29 +41,6 @@ object TapeEquilibrium {
 
     val initialDiff = getDiff(1)
     findEq(2, initialDiff)
-  }
-
-  // 50%
-  def solution2(A: Array[Int]): Int = {
-    val L = A.toList
-    def getDiff(P: Int): Int = Math.abs(L.take(P).sum - L.takeRight(L.size - P).sum)
-
-    val arr: Array[Int] = Array.ofDim(L.size)
-    for (i <- 1 until L.size - 1) arr(i) = getDiff(i)
-    arr.toList.min
-  }
-
-  // 100
-  def solution3(A: Array[Int]): Int = {
-    val sum = A.sum
-
-    def getDiff(sumLeft: Int, sumRight: Int): Int = Math.abs(sumLeft - sumRight)
-
-    def findEq(P: Int, sumLeft: Int, curMin: Int): Int =
-      if (P == A.length) curMin
-      else findEq(P + 1, sumLeft + A(P - 1), Math.min(curMin, getDiff(sumLeft, sum - sumLeft)))
-
-    findEq(2, A(0), getDiff(A(0), sum - A(0)))
   }
 
   val ar1 = Array(3, 1, 2, 4, 3)
