@@ -25,6 +25,46 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 * [MissingInteger](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MissingInteger.sc) (100%)
 * [MaxCounters](https://github.com/ticofab/codility-scala-lessons/blob/master/src/countingelements/MaxCounters.sc) (88%)
 
+**Prefix Sums:**
+
+* [PassingCars](https://github.com/ticofab/codility-scala-lessons/blob/master/src/prefixsums/PassingCars.sc)
+* [CountDiv](https://github.com/ticofab/codility-scala-lessons/blob/master/src/prefixsums/CountDiv.sc)
+* [GenomicRangeQuery](https://github.com/ticofab/codility-scala-lessons/blob/master/src/prefixsums/GenomicRangeQuery.sc)
+* [MinAvgTwoSlice](https://github.com/ticofab/codility-scala-lessons/blob/master/src/prefixsums/MinAvgTwoSlice.sc)
+
+**Sorting:**
+
+* [Triangle](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/Triangle.sc)
+* [Distinct](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/Distinct.sc)
+* [MaxProductOfThree](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/MaxProductOfThree.sc)
+* [NumberOfDiscIntersections](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/NumberOfDiscIntersections.sc)
+
+**Stacks and Queues:**
+
+* [Fish](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Fish.sc)
+* [Brackets](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Brackets.sc)
+* [Nesting](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Nesting.sc)
+* [StoneWall](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/StoneWall.sc)
+
+**Leader:**
+
+* [Dominator](https://github.com/ticofab/codility-scala-lessons/blob/master/src/leader/Dominator.sc)
+* [EquiLeader](https://github.com/ticofab/codility-scala-lessons/blob/master/src/leader/EquiLeader.sc)
+
+**Maximum Slice Problem:**
+
+* [MaxDoubleSliceSum](https://github.com/ticofab/codility-scala-lessons/blob/master/src/maximumsliceproblem/MaxDoubleSliceSum.sc)
+* [MaxSliceSum](https://github.com/ticofab/codility-scala-lessons/blob/master/src/maximumsliceproblem/MaxSliceSum.sc)
+* [MaxProfit](https://github.com/ticofab/codility-scala-lessons/blob/master/src/maximumsliceproblem/MaxProfit.sc)
+
+**Prime and Composite Numbers:**
+
+* [CountFactors](https://github.com/ticofab/codility-scala-lessons/blob/master/src/primeandcompositenumbers/CountFactors.sc)
+* [MinPerimeterRectangle](https://github.com/ticofab/codility-scala-lessons/blob/master/src/primeandcompositenumbers/MinPerimeterRectangle.sc)
+* [Flags](https://github.com/ticofab/codility-scala-lessons/blob/master/src/primeandcompositenumbers/Flags.sc)
+* [Peaks](https://github.com/ticofab/codility-scala-lessons/blob/master/src/primeandcompositenumbers/Peaks.sc)
+
+
 License
 --------
 
