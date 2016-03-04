@@ -34,8 +34,8 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 
 **Sorting:**
 
-* [Triangle](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/Triangle.sc)
-* [Distinct](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/Distinct.sc)
+* [Triangle](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/Triangle.sc) (93%)
+* [Distinct](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/Distinct.sc) (100%)
 * [MaxProductOfThree](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/MaxProductOfThree.sc)
 * [NumberOfDiscIntersections](https://github.com/ticofab/codility-scala-lessons/blob/master/src/sorting/NumberOfDiscIntersections.sc)
 

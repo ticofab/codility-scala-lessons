@@ -1,5 +1,26 @@
 object Triangle {
+
+  // 93%
+  def solution(A: Array[Int]): Int = {
+    val sa = A.toList.sorted.toArray
+    for (p <- 0 to sa.length - 3) if (sa(p) + sa(p + 1) > sa(p + 2)) return 1
+    0
+  }
+
+  val ar1 = Array(10, 2, 5, 1, 8, 20)
+  val ar2 = Array(10, 50, 5, 1)
+  val ar3 = Array[Int]()
+  val ar4 = Array(1, 1, 1)
+  val ar5 = Array(2, 3)
+
+  solution(ar1)
+  solution(ar2)
+  solution(ar3)
+  solution(ar4)
+  solution(ar5)
+
   /*
+
   A zero-indexed array A consisting of N integers is given. A triplet (P, Q, R) is triangular if 0 ≤ P < Q < R < N and:
 
   A[P] + A[Q] > A[R],
