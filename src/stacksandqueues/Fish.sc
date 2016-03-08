@@ -1,5 +1,28 @@
 object Fish {
 
+  def solution(A: Array[Int], B: Array[Int]): Int = {
+    var survivors = 0
+    for (i <- A.indices) {
+      var switch = 1
+      B(i) match {
+        case 0 =>
+          for (j <- i + 1 until A.length) {
+            if (B(j) == 1 && A(i) < A(j)) switch = 0
+          }
+        case 1 =>
+          for (j <- i + 1 until A.length) {
+            if (B(j) == 0 && A(i) < A(j)) switch = 0
+          }
+      }
+      survivors = survivors + switch
+    }
+    survivors
+  }
+
+  val A1 = Array(4, 3, 2, 1, 5)
+  val B1 = Array(0, 1, 0, 0, 0)
+  solution(A1, B1)
+
   /*
   You are given two non-empty zero-indexed arrays A and B consisting of N integers. Arrays A and B represent N voracious fish in a river, ordered downstream along the flow of the river.
 
@@ -17,7 +40,7 @@ object Fish {
 
     For example, consider arrays A and B such that:
 
-    A[0] = 4    B[0] = 0
+  A[0] = 4    B[0] = 0
   A[1] = 3    B[1] = 1
   A[2] = 2    B[2] = 0
   A[3] = 1    B[3] = 0

@@ -35,7 +35,7 @@ object MaxProductOfThree {
   test(ar2)
   test(ar3)
   test(ar4)
-  
+
   /*
   A non-empty zero-indexed array A consisting of N integers is given. The product of triplet (P, Q, R) equates to A[P] * A[Q] * A[R] (0 ≤ P < Q < R < N).
 

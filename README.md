@@ -42,8 +42,8 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 **Stacks and Queues:**
 
 * [Fish](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Fish.sc)
-* [Brackets](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Brackets.sc)
-* [Nesting](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Nesting.sc)
+* [Brackets](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Brackets.sc) (100%)
+* [Nesting](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/Nesting.sc) (100%)
 * [StoneWall](https://github.com/ticofab/codility-scala-lessons/blob/master/src/stacksandqueues/StoneWall.sc)
 
 **Leader:**

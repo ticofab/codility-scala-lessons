@@ -1,4 +1,25 @@
 object Nesting {
+
+  // 100%
+  def solution(S: String): Int = {
+    var list = List[Char]()
+    for (i <- S.indices) {
+      S(i) match {
+        case '(' => list = S(i) :: list
+        case ')' =>
+          if (list.isEmpty) return 0
+          if (list.head == '(') list = list.tail
+          else return 0
+      }
+    }
+    if (list.isEmpty) 1 else 0
+  }
+
+  val goodString = "(()(())())"
+  val badString = "())"
+  solution(goodString)
+  solution(badString)
+
   /*
   A string S consisting of N characters is called properly nested if:
 
