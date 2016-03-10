@@ -48,7 +48,7 @@ Lessons from [Codility](https://codility.com) implemented in Scala.
 
 **Leader:**
 
-* [Dominator](https://github.com/ticofab/codility-scala-lessons/blob/master/src/leader/Dominator.sc)
+* [Dominator](https://github.com/ticofab/codility-scala-lessons/blob/master/src/leader/Dominator.sc) (91%)
 * [EquiLeader](https://github.com/ticofab/codility-scala-lessons/blob/master/src/leader/EquiLeader.sc)
 
 **Maximum Slice Problem:**

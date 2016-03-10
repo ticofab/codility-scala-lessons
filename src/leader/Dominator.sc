@@ -1,5 +1,29 @@
 object Dominator {
-  
+
+  // 91% (copied from the codility website)
+  def solution(A: Array[Int]): Int = {
+    val n = A.length
+    var size = 0
+    var value = -1
+    for (i <- 0 until n) {
+      if (size == 0) {
+        size = size + 1
+        value = A(i)
+      } else if (value != A(i)) size = size - 1
+      else size = size + 1
+    }
+    var candidate = -1
+    if (size > 0) candidate = value
+    var leader = -1
+    var count = 0
+    for (k <- 0 until n) if (A(k) == candidate) count = count + 1
+    if (count >= n / 2) leader = candidate
+    A.indexOf(leader)
+  }
+
+  val ar1 = Array(3, 2, 3, 4, 3, 3, 3, -1)
+  solution(ar1)
+
   /*
   A zero-indexed array A consisting of N integers is given. The dominator of array A is the value that occurs in more than half of the elements of A.
 
