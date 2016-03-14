@@ -1,6 +1,5 @@
 object EquiLeader {
 
-  // 11%
   def solution(A: Array[Int]): Int = {
     def findLeader(A: Array[Int]): Int = {
       val n = A.length
@@ -24,10 +23,8 @@ object EquiLeader {
 
     var count = 0
     for (i <- 0 to A.length - 2) {
-      val as1 = A.slice(0, i + 1)
-      println(as1.toList)
-      val as2 = A.slice(i + 1, A.length)
-      println(as2.toList)
+      val as1 = A.slice(0, i)
+      val as2 = A.slice(i + 1, A.length - 1)
       if (findLeader(as1) == findLeader(as2)) {
         println(s"equileader found: $i")
         count = count + 1
@@ -38,9 +35,7 @@ object EquiLeader {
   }
 
   val ar1 = Array(4, 3, 4, 4, 4, 2)
-  val ar2 = Array(4, 4)
   solution(ar1)
-  solution(ar2)
   /*
   A non-empty zero-indexed array A consisting of N integers is given.
   The leader of this array is the value that occurs in more than half of the elements of A.
